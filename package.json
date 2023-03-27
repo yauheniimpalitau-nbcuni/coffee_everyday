@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "test": "jest --coverage --coverageDirectory=reports"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -12,9 +13,19 @@
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
     "morgan": "~1.9.1"
-
   },
   "devDependencies": {
+    "jest": "^29.5.0",
     "jest-junit": "^15.0.0"
+  },
+  "jest-junit": {
+    "suiteName": "jest tests",
+    "outputDirectory": ".",
+    "outputName": "junit.xml",
+    "uniqueOutputName": "false",
+    "classNameTemplate": "{classname}-{title}",
+    "titleTemplate": "{classname}-{title}",
+    "ancestorSeparator": " › ",
+    "usePathForSuiteName": "true"
   }
 }
