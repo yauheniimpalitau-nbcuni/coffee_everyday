@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "test": "jest --coverage --coverageDirectory=tests"
+    "test": "jest --ci --coverageDirectory=tests --reporters=jest-junit"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -21,7 +21,7 @@
   },
   "jest-junit": {
     "suiteName": "jest tests",
-    "outputDirectory": ".",
+    "outputDirectory": "reports",
     "outputName": "junit.xml",
     "uniqueOutputName": "false",
     "classNameTemplate": "{classname}-{title}",
