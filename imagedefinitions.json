@@ -1,0 +1,6 @@
+[
+  {
+    "name": "nodejs",
+    "imageUri": "137374501278.dkr.ecr.us-east-1.amazonaws.com/cicdrepo:latest"
+  }
+]
